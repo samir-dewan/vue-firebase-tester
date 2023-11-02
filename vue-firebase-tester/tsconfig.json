@@ -1,5 +1,9 @@
 {
   "files": [],
+  "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+  },
   "references": [
     {
       "path": "./tsconfig.node.json"
