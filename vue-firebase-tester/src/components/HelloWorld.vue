@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { collection, getDocs, addDoc, updateDoc, deleteDoc, doc } from '@firebase/firestore';
 import { db } from "../firebase/firebase.config";
-import { uuidv4 } from '@firebase/util';
+import SimpleInputText from './questionnaire/SimpleInputText.vue';
 
 interface NameData {
   id: string,
@@ -54,6 +54,7 @@ async function deleteName(id: string) {
 <template>
   <div class="greetings">
     <h1 class="green">hello</h1>
+    <SimpleInputText />
     <h3>
       You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
